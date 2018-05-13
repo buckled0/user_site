@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'mongoid', '~> 6.1.0'
 gem 'haml'
 gem 'jquery'
+gem 'faker', '~> 1.8', '>= 1.8.7'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
