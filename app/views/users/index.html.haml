@@ -1,6 +1,6 @@
 %h1 Welcome to the user list!
 
-%table
+%table#userTable.tablesorter
 	%thead
 		%tr
 			%th
@@ -24,3 +24,8 @@
 					= link_to('Destroy', user, method: :delete, data: { confirm: 'Are you sure?' })
 
 = link_to('New User', new_user_path)
+
+:javascript
+	jQuery(document).ready(function() {
+		jQuery('#userTable').tablesorter();
+	});
