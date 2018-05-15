@@ -30,7 +30,10 @@ gem 'redis', '~> 3.0'
 gem 'mongoid', '~> 6.1.0'
 gem 'haml'
 gem 'jquery'
+gem 'jquery-rails'
 gem 'faker', '~> 1.8', '>= 1.8.7'
+gem 'kaminari'
+gem 'kaminari-mongoid'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
