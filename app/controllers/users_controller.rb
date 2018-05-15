@@ -20,6 +20,8 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+        html = ApplicationController.render(partial: 'users/user', locals: { user: @user }, formats: [:html])
+        ActionCable.server.broadcast 'user_channel', html: html
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else
